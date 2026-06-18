@@ -672,3 +672,18 @@ main {
     line-height: 1.6;
     margin: 0;
 }
+
+.results-counter {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: #f1f5f9;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.results-counter span {
+    font-weight: 600;
+    color: #0b1a2e;
+}
