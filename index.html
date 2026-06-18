@@ -28,6 +28,7 @@
                     <input type="text" id="searchInput" placeholder="Поиск курсов..." />
                 </div>
                 <div class="sort-buttons">
+                    <button class="btn-sort active" data-sort="default">По умолчанию</button>
                     <button class="btn-sort" data-sort="title">По названию</button>
                     <button class="btn-sort" data-sort="price">По цене</button>
                     <button class="btn-sort" data-sort="rating">По рейтингу</button>
@@ -36,6 +37,7 @@
 
             <div class="course-list" id="courseList">
                 <div class="course-card" 
+                     data-id="1"
                      data-title="Python для начинающих" 
                      data-price="15000" 
                      data-rating="4.8"
@@ -52,6 +54,7 @@
                 </div>
 
                 <div class="course-card" 
+                     data-id="2"
                      data-title="Java. Базовый курс" 
                      data-price="18000" 
                      data-rating="4.6"
@@ -66,11 +69,12 @@
                 </div>
 
                 <div class="course-card" 
-                     data-title="JavaScript & TypeScript" 
+                     data-id="3"
+                     data-title="JavaScript &amp; TypeScript" 
                      data-price="22000" 
                      data-rating="4.9"
                      data-level="middle">
-                    <h3>JavaScript & TypeScript</h3>
+                    <h3>JavaScript &amp; TypeScript</h3>
                     <p>ES6+, TypeScript, асинхронность, DOM, React-подход.</p>
                     <div class="course-meta">
                         <span class="price">22 000 ₽</span>
@@ -80,6 +84,7 @@
                 </div>
 
                 <div class="course-card" 
+                     data-id="4"
                      data-title="Go для бэкенда" 
                      data-price="25000" 
                      data-rating="4.7"
@@ -94,6 +99,7 @@
                 </div>
 
                 <div class="course-card" 
+                     data-id="5"
                      data-title="Machine Learning с Python" 
                      data-price="35000" 
                      data-rating="4.9"
@@ -108,6 +114,7 @@
                 </div>
 
                 <div class="course-card" 
+                     data-id="6"
                      data-title="DevOps практика" 
                      data-price="32000" 
                      data-rating="4.8"
@@ -137,5 +144,7 @@
             <p>© 2026 Онлайн‑университет IT. Все права защищены.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
