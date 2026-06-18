@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Онлайн‑университет IT | Каталог курсов</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">IT‑Университет</a>
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#" class="active">Курсы</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="catalog">
+            <h1>Каталог курсов</h1>
+
+            <div class="catalog__toolbar">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Поиск курсов..." />
+                </div>
+                <div class="sort-buttons">
+                    <button class="btn-sort" data-sort="title">По названию</button>
+                    <button class="btn-sort" data-sort="price">По цене</button>
+                    <button class="btn-sort" data-sort="rating">По рейтингу</button>
+                </div>
+            </div>
+
+            <div class="course-list" id="courseList">
+                <div class="course-card" 
+                     data-title="Python для начинающих" 
+                     data-price="15000" 
+                     data-rating="4.8"
+                     data-level="beginner">
+                    <h3>Python для начинающих</h3>
+                    <p>Основы Python, ветвления, циклы, функции, работа с файлами.</p>
+                    <div class="course-meta">
+                        <span class="price">15 000 ₽</span>
+                        <span class="rating">⭐ 4.8</span>
+                        <span class="level">Начинающий</span>
+                    </div>
+                </div>
+
+                <div class="course-card" 
+                     data-title="Java. Базовый курс" 
+                     data-price="18000" 
+                     data-rating="4.6"
+                     data-level="beginner">
+                    <h3>Java. Базовый курс</h3>
+                    <p>Синтаксис Java, ООП, коллекции, исключения, ввод/вывод.</p>
+                    <div class="course-meta">
+                        <span class="price">18 000 ₽</span>
+                        <span class="rating">⭐ 4.6</span>
+                        <span class="level">Начинающий</span>
+                    </div>
+                </div>
+
+                <div class="course-card" 
+                     data-title="JavaScript & TypeScript" 
+                     data-price="22000" 
+                     data-rating="4.9"
+                     data-level="middle">
+                    <h3>JavaScript & TypeScript</h3>
+                    <p>ES6+, TypeScript, асинхронность, DOM, React-подход.</p>
+                    <div class="course-meta">
+                        <span class="price">22 000 ₽</span>
+                        <span class="rating">⭐ 4.9</span>
+                        <span class="level">Средний</span>
+                    </div>
+                </div>
+
+                <div class="course-card" 
+                     data-title="Go для бэкенда" 
+                     data-price="25000" 
+                     data-rating="4.7"
+                     data-level="middle">
+                    <h3>Go для бэкенда</h3>
+                    <p>Go, горутины, каналы, REST API, работа с БД.</p>
+                    <div class="course-meta">
+                        <span class="price">25 000 ₽</span>
+                        <span class="rating">⭐ 4.7</span>
+                        <span class="level">Средний</span>
+                    </div>
+                </div>
+
+                <div class="course-card" 
+                     data-title="Machine Learning с Python" 
+                     data-price="35000" 
+                     data-rating="4.9"
+                     data-level="advanced">
+                    <h3>Machine Learning с Python</h3>
+                    <p>NumPy, Pandas, Scikit-learn, нейронные сети, TensorFlow.</p>
+                    <div class="course-meta">
+                        <span class="price">35 000 ₽</span>
+                        <span class="rating">⭐ 4.9</span>
+                        <span class="level">Продвинутый</span>
+                    </div>
+                </div>
+
+                <div class="course-card" 
+                     data-title="DevOps практика" 
+                     data-price="32000" 
+                     data-rating="4.8"
+                     data-level="advanced">
+                    <h3>DevOps практика</h3>
+                    <p>Docker, Kubernetes, CI/CD, мониторинг, облачные решения.</p>
+                    <div class="course-meta">
+                        <span class="price">32 000 ₽</span>
+                        <span class="rating">⭐ 4.8</span>
+                        <span class="level">Продвинутый</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button class="page-btn" data-page="prev" disabled>‹ Назад</button>
+                <button class="page-btn active" data-page="1">1</button>
+                <button class="page-btn" data-page="2">2</button>
+                <button class="page-btn" data-page="3">3</button>
+                <button class="page-btn" data-page="next">Вперёд ›</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Онлайн‑университет IT. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
