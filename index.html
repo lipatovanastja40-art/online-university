@@ -127,14 +127,30 @@
                         <span class="level">Продвинутый</span>
                     </div>
                 </div>
+
+                <div class="course-card" 
+                     data-id="7"
+                     data-title="C# для начинающих" 
+                     data-price="16000" 
+                     data-rating="4.5"
+                     data-level="beginner">
+                    <h3>C# для начинающих</h3>
+                    <p>Основы C#, ООП, LINQ, работа с базами данных</p>
+                    <div class="course-meta">
+                        <span class="price">16 000 ₽</span>
+                        <span class="rating">⭐ 4.5</span>
+                        <span class="level">Начинающий</span>
+                    </div>
+                </div>
             </div>
 
             <div class="pagination" id="pagination">
                 <button class="page-btn" data-page="prev" disabled>‹ Назад</button>
-                <button class="page-btn active" data-page="1">1</button>
-                <button class="page-btn" data-page="2">2</button>
-                <button class="page-btn" data-page="3">3</button>
                 <button class="page-btn" data-page="next">Вперёд ›</button>
+            </div>
+
+             <div class="results-counter" id="resultsCounter">
+                Показано: <span id="shownCount">0</span> из <span id="totalCount">0</span>
             </div>
         </section>
     </main>
