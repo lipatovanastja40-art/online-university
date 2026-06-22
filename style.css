@@ -882,3 +882,573 @@ main {
         font-size: 1.5rem;
     }
 }
+/* ============================================
+   СТРАНИЦА "О НАС"
+   ============================================ */
+
+/* ---- Хлебные крошки ---- */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+.breadcrumb .current {
+    color: #0b1a2e;
+    font-weight: 500;
+}
+
+/* ---- Герой-секция ---- */
+.about-hero {
+    background: linear-gradient(135deg, #0b1a2e 0%, #1a2f4a 100%);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    margin-bottom: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.about-hero__content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-hero__content .subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.about-hero__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 0.3rem;
+}
+
+/* ---- Миссия ---- */
+.about-mission {
+    margin-bottom: 4rem;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #0b1a2e;
+}
+
+.mission-text p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.mission-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f1f5f9;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #0b1a2e;
+}
+
+.value-icon {
+    font-size: 1.3rem;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid #e9edf2;
+}
+
+/* ---- История (таймлайн) ---- */
+.about-history {
+    margin-bottom: 4rem;
+}
+
+.about-history h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #0b1a2e;
+}
+
+.history-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #60a5fa, #a78bfa);
+    border-radius: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 2rem 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #60a5fa;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #60a5fa;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    color: #0b1a2e;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* ---- Команда ---- */
+.about-team {
+    margin-bottom: 4rem;
+}
+
+.about-team h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #0b1a2e;
+}
+
+.team-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid #e9edf2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.team-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #60a5fa;
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.15rem;
+    color: #0b1a2e;
+    margin-bottom: 0.25rem;
+}
+
+.team-role {
+    color: #60a5fa;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.team-bio {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #0b1a2e;
+    transition: background 0.2s, transform 0.2s;
+    font-size: 1.1rem;
+}
+
+.social-link:hover {
+    background: #60a5fa;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ---- Отзывы о нас ---- */
+.about-testimonials {
+    margin-bottom: 4rem;
+}
+
+.about-testimonials h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0b1a2e;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #e9edf2;
+    transition: box-shadow 0.3s;
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-rating {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    color: #1e293b;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #0b1a2e;
+}
+
+.author-role {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* ---- Преимущества ---- */
+.about-advantages {
+    margin-bottom: 4rem;
+}
+
+.about-advantages h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #0b1a2e;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.advantage-item {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e9edf2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.advantage-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.advantage-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.advantage-item h3 {
+    font-size: 1.15rem;
+    color: #0b1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.advantage-item p {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ---- CTA (Призыв к действию) ---- */
+.about-cta {
+    background: linear-gradient(135deg, #0b1a2e, #1a2f4a);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary {
+    background: #60a5fa;
+    color: #0b1a2e;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;display: inline-block;
+}
+
+.cta-buttons .btn-primary:hover {
+    background: #93bbfc;
+    transform: translateY(-2px);
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #60a5fa;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-block;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: rgba(96, 165, 250, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   АДАПТИВНОСТЬ
+   ============================================ */
+
+/* Планшеты */
+max-width: 1024px {
+    .about-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобильные */
+max-width: 768px {
+    .about-hero {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .about-hero__content h1 {
+        font-size: 2rem;
+    }
+    
+    .about-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .mission-values {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .history-timeline {
+        padding-left: 1.5rem;
+    }
+}
+
+/* Маленькие мобильные */
+max-width: 480px {
+    .about-hero__stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.6rem;
+    }
+    
+    .mission-values {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+}
